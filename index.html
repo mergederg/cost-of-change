@@ -1,104 +1,149 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Cost of Change</title>
+    <title>Cost of Change</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-auto-animate style="height: 600px">
-					<h2 data-id="title" style="margin-top: 260px;">Cost of Changes</h2>
-					<div class="graph-item" data-id="1" style="background: green; position: absolute; top: 150px; left: 16%; width: 60px; height: 60px;">
-						<label>Requirements</label>
-					</div>
-					<div class="graph-item" data-id="2" style="background: green; position: absolute; top: 150px; left: 36%; width: 60px; height: 60px;">
-						<label>Design</label>
-					</div>
-					<div class="graph-item" data-id="3" style="background: green; position: absolute; top: 150px; left: 56%; width: 60px; height: 60px;">
-						<label>Development</label>
-					</div>
-					<div class="graph-item" data-id="4" style="background: green; position: absolute; top: 150px; left: 76%; width: 60px; height: 60px;">
-						<label>Testing</label>
-					</div>
-					<p>As the complexity of a given feature/change/product scales, the cost of change goes from being completely flat (that is, the same at any point in product lifecycle)... </p>
-				</section>
-				<section data-auto-animate style="height: 600px">
-					<h2 data-id="title" style="margin-top: 500px">Cost of Changes</h2>
-					<div class="graph-item" data-id="1" style="background: green; position: absolute; bottom: 190px; left: 16%; width: 60px; height: 60px;">
-						<label>Requirements</label>
-					</div>
-					<div class="graph-item" data-id="2" style="background: darkcyan; position: absolute; bottom: 190px; left: 36%; width: 60px; height: 100px;">
-						<label>Design</label>
-					</div>
-					<div class="graph-item" data-id="3" style="background: orange; position: absolute; bottom: 190px; left: 56%; width: 60px; height: 260px;">
-						<label>Development</label>
-					</div>
-					<div class="graph-item" data-id="4" style="background: red; position: absolute; bottom: 190px; left: 76%; width: 60px; height: 400px;">
-						<label>Testing</label>
-					</div>
-					<p>...to an exponential curve more like this.</p>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="title">Okay, but Why?</h2>
-					<img src="assets/comparingTechniques.jpg" class="r-stretch"/>
-					<p><small>The main culprit is in what software engineering academics call the <strong>feedback cycle:</strong> the length of time required to recognize a problem, loop in any necessary stakeholders and identify &amp; apply a solution.</small></p>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
-					<p>Plenty post-modern software engineering academics (Beck, Astels, other TDD & eXP proponents, etc.) would probably say so.</p>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
-					<p style="opacity:0.2">Plenty post-modern software engineering academics (Beck, Astels, other TDD & eXP proponents, etc.) would probably say so.</p>
-					<p>But they're writing about bureaucratically massive projects with many developers and product development lifecycles stretching out over years.</p>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
-					<img src="assets/Cost-change-curve-of-traditional-and-agile-methodology-23.png" class="r-stretch"/>
-					<p><small>Agile methodologies reduce the average cost over time (flatter curve), but require more person-hours up front per project/product in keeping everyone on the same page.</small></p>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="title">Wait,<br/>I heard agile flatten this.</h2>
-					<img src="assets/Cost-change-curve-of-traditional-and-agile-methodology-23.png" class="r-stretch"/>
-					<p style="opacity:0.2;"><small>Agile methodologies can reduce the average cost over time (flatter curve), but take more person-hours up front per project/product in keeping everyone on the same page.</small></p>
-					<p><small>Plus a schedule full of meetings to facilitate constantly iterating over things lowers the overall number of products that can be supported by smaller teams.</small></p>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="title">Wait,<br/>I heard agile flatten this.</h2>
-					<img src="assets/Cost-change-curve-of-traditional-and-agile-methodology-23.png" class="r-stretch"/>
-					<p style="opacity:0.2;"><small>Plus a schedule full of meetings to facilitate constantly iterating over things lowers the overall number of products that can be supported by smaller teams.</small></p>
-					<p><small>For most 'simpler' projects where its conceivable </small></p>
-				</section>
-				<section data-auto-animate>
-					<h2 data-id="title">Okay, so can we actually do?</h2>
-				</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-auto-animate style="height: 600px">
+            <h2 data-id="title" style="margin-top: 260px;">Cost of Changes</h2>
+            <div class="graph-item" data-id="1"
+                 style="background: green; position: absolute; top: 150px; left: 16%; width: 60px; height: 60px;">
+                <label>Requirements</label>
+            </div>
+            <div class="graph-item" data-id="2"
+                 style="background: green; position: absolute; top: 150px; left: 36%; width: 60px; height: 60px;">
+                <label>Design</label>
+            </div>
+            <div class="graph-item" data-id="3"
+                 style="background: green; position: absolute; top: 150px; left: 56%; width: 60px; height: 60px;">
+                <label>Development</label>
+            </div>
+            <div class="graph-item" data-id="4"
+                 style="background: green; position: absolute; top: 150px; left: 76%; width: 60px; height: 60px;">
+                <label>Testing</label>
+            </div>
+            <p>As the complexity of a given feature/change/product scales, the cost of change goes from being completely
+                flat (that is, the same at any point in product lifecycle)... </p>
+        </section>
+        <section data-auto-animate style="height: 600px">
+            <h2 data-id="title" style="margin-top: 500px">Cost of Changes</h2>
+            <div class="graph-item" data-id="1"
+                 style="background: green; position: absolute; bottom: 190px; left: 16%; width: 60px; height: 60px;">
+                <label>Requirements</label>
+            </div>
+            <div class="graph-item" data-id="2"
+                 style="background: darkcyan; position: absolute; bottom: 190px; left: 36%; width: 60px; height: 100px;">
+                <label>Design</label>
+            </div>
+            <div class="graph-item" data-id="3"
+                 style="background: orange; position: absolute; bottom: 190px; left: 56%; width: 60px; height: 260px;">
+                <label>Development</label>
+            </div>
+            <div class="graph-item" data-id="4"
+                 style="background: red; position: absolute; bottom: 190px; left: 76%; width: 60px; height: 400px;">
+                <label>Testing</label>
+            </div>
+            <p>...to an exponential curve more like this.</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Okay, but Why?</h2>
+            <p>Rushing to build the wrong thing and then trying to retrofit it to behave in a way never originally intended will always take longer than just building the right thing.</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Okay, but Why?</h2>
+            <img src="assets/comparingTechniques.jpg" class="r-stretch"/>
+            <p><small><strong>Feedback cycle:</strong> the length of time required to recognize a problem,
+                loop in any necessary stakeholders and identify &amp; apply a solution.</small></p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
+            <p>Plenty post-modern software engineering academics (Beck, Astels, other TDD & eXP proponents, etc.) would
+                probably say so.</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
+            <p style="opacity:0.2">Plenty post-modern software engineering academics (Beck, Astels, other TDD & eXP
+                proponents, etc.) would probably say so.</p>
+            <p>But they're writing about bureaucratically massive projects with many developers and product development
+                lifecycles stretching out over years (e.g, aeronautics device firmware at Boeing)</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
+            <img src="assets/Cost-change-curve-of-traditional-and-agile-methodology-23.png" class="r-stretch"/>
+            <p><small>Agile methodologies reduce the average cost over time (flatter curve), but require more
+                person-hours up front per project/product in keeping everyone on the same page.</small></p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
+            <img src="assets/Cost-change-curve-of-traditional-and-agile-methodology-23.png" class="r-stretch"/>
+            <p style="opacity:0.2;"><small>Agile methodologies can reduce the average cost over time (flatter curve),
+                but take more person-hours up front per project/product in keeping everyone on the same page.</small>
+            </p>
+            <p><small>Plus a schedule full of meetings to facilitate constantly iterating over things lowers the overall
+                number of products that can be supported by smaller teams.</small></p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Wait,<br/>I heard agile flattens this.</h2>
+            <img src="assets/Cost-change-curve-of-traditional-and-agile-methodology-23.png" class="r-stretch"/>
+            <p style="opacity:0.2;"><small>Plus a schedule full of meetings to facilitate constantly iterating over
+                things lowers the overall number of products that can be supported by smaller teams.</small></p>
+            <p><small>This can make for a good approach for projects that by their nature need frequent changes,
+                significant feature rewrites, or constant iteration over its life cycle, but for simpler projects like
+                relatively static marketing sites tends not to be a great value proposition.</small></p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Okay, so can we actually do?</h2>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Okay, so can we actually do?</h2>
+            <p>Some things!</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Okay, so can we actually do?</h2>
+            <p>Try to catch as many requirements defects as possible prior to development.</p>
+            <ul>
+                <li>Model storming alongside design helps catch requirements defects early that otherwise would be part of the spec until caught.</li>
+            </ul>
+        </section>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Okay, so can we actually do?</h2>
+            <p>Developers can help ensure PMs are asking the right questions about dynamic content during requirements gathering.</p>
+            <ul>
+                <li>"How should this be sorted?"</li>
+                <li>"What should be shown here?"</li>
+                <li>"Under what circumstances do these items display or not display?" (e.g, VWW's events banners)</li>
+            </ul>
+        </section>
+    </div>
+</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
 </html>
